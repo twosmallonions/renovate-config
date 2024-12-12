@@ -2,6 +2,15 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "config:best-practices",
+        "schedule:autoMergeDaily",
+        "group:allNonMajor",
+        ":semanticCommits",
         ":automergeMinor"
+    ],
+    "packageRules": [
+        {
+            "matchPackageNames": ["twosmallonions/dist/actions/update-hash"],
+            "enabled": false
+        }
     ]
 }
