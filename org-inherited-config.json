@@ -9,7 +9,7 @@
     ],
     "packageRules": [
         {
-            "matchPackageNames": ["twosmallonions/dist/actions/update-hash"],
+            "matchPackageNames": ["twosmallonions/dist"],
             "enabled": false
         }
     ]
